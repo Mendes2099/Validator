@@ -1,1 +1,8 @@
-<p>sscc-form works!</p>
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()" #ssccForm="ngForm">
+    <label for="sscc">Enter a SSCC/NVE number:</label>
+    <input type="text" id="sscc" name="sscc" required minlength="18" maxlength="18" pattern="^\d{18}$"
+      [(ngModel)]="ssccNumber" (input)="validateInput()" />
+    <button type="submit" [disabled]="!ssccForm.valid">Validate</button>
+  </form>
+</div>
