@@ -1,0 +1,19 @@
+<p>sscc-form works!</p>import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // Import for ngModel
+
+@Component({
+selector: 'app-sscc-form',
+templateUrl: './sscc-form.component.html',
+styleUrls: ['./sscc-form.component.scss'],
+standalone: true, // Define as standalone
+imports: [FormsModule] // Declare FormsModule as an import for this component
+})
+export class SsccFormComponent {
+ssccNumber: string = '';
+
+onSubmit() {
+if (this.ssccNumber) {
+console.log('SSCC/NVE Entered:', this.ssccNumber);
+}
+}
+}
