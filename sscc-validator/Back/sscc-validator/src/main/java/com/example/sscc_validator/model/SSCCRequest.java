@@ -1,9 +1,9 @@
-package com.example.ssccvalidator.model;
+package com.example.sscc_validator.model;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class SSCCRequest {
@@ -43,7 +43,7 @@ public class SSCCRequest {
         return isValid;
     }
 
-    public void setValid(boolean valid) {
-        isValid = valid;
+    public void setValid(boolean isValid) {
+        this.isValid = isValid;
     }
 }

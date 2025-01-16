@@ -1,9 +1,13 @@
-package com.example.ssccvalidator.controller;
+package com.example.sscc_validator.controller;
 
-import com.example.ssccvalidator.service.SSCCService;
-import com.example.ssccvalidator.model.SSCCRequest;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.sscc_validator.model.SSCCRequest;
+import com.example.sscc_validator.service.SSCCService;
 
 @RestController
 @RequestMapping("/api/sscc")

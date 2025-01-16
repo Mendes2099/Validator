@@ -1,6 +1,7 @@
-package com.example.ssccvalidator.repository;
+package com.example.sscc_validator.repository;
 
-import com.example.ssccvalidator.model.SSCCRequest;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.sscc_validator.model.SSCCRequest;
 
 public interface SSCCRequestRepository extends JpaRepository<SSCCRequest, Long> {}
